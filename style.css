@@ -1,0 +1,591 @@
+@font-face {
+    font-family: wayfinderLight;
+    src: url(Fontspring-DEMO-wayfindercf-light.otf);}
+@font-face {
+    font-family: newsReader;
+    src: url(Newsreader-VariableFont_opsz\,wght.ttf);}
+@font-face {
+    font-family: anotherTag;
+    src: url(aAnotherTag.ttf);}
+@font-face {
+        font-family: courierStd;
+        src: url(CourierStd-Oblique.otf);} 
+@font-face {
+        font-family: ghaitsaF;
+        src: url(Ghaitsa.ttf);}       
+@font-face {
+        font-family: grenzeF;
+        src: url(Grenze-ExtraLightItalic.ttf);} 
+@font-face {
+        font-family: mistoF;
+        src: url(Misto.ttf);} 
+@font-face {
+        font-family: oldLondon;
+        src: url(OldLondon.ttf);} 
+@font-face {
+        font-family: poppinsBlack;
+        src: url(Poppins-BlackItalic.ttf);} 
+@font-face {
+        font-family: poppinsThin;
+        src: url(Poppins-Thin.ttf);} 
+@font-face {
+        font-family: verlagCondensed;
+        src: url(VerlagCondensed-Book.ttf);} 
+@font-face {
+        font-family: molgenF;
+        src: url(molgen-0wml9.ttf);} 
+@font-face {
+        font-family: reigoBlack;
+        src: url(reigo-black.ttf);} 
+@font-face {
+        font-family: glyternF;
+        src: url(glyternpersonaluseonly-1gorl.otf);} 
+@font-face {
+        font-family: blacKing;
+        src: url(blacking-jeggv.otf);} 
+@font-face {
+        font-family: shriKhand;
+        src: url(Shrikhand-Regular.ttf);}
+
+html {
+    box-sizing: border-box;
+    overflow-x: hidden;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%
+}
+
+html,body {
+    font-family: wayfinderLight, serif;
+    font-size: 30px;
+    line-height: 1.5;
+}
+
+body {
+    margin: 0
+}
+
+*,*:before,*:after {
+    box-sizing: inherit
+}
+
+a {
+    color: inherit
+}
+
+a {
+    background-color: transparent
+}
+
+a:active,a:hover {
+    outline-width: 0
+}
+
+/* ----- NAVBAR SETTINGS -------------- */
+#myNavbar{
+    font-family: wayfinderLight, serif;
+    font-weight: 400;
+    margin: 20px 0 10px;
+    padding-left: 30px;
+    padding-right: 20px;
+}
+
+
+#meryltop {
+    font-family: wayfinderLight, serif;
+    font-weight: 400;
+    color: #E5E3D5;
+}
+
+#menuButtons {
+    font-family: wayfinderLight, serif;
+    color: #E5E3D5;
+}
+
+.bar {
+    width: 100%;
+    overflow: hidden
+}
+
+.center.bar {
+    display: inline-block;
+    width: auto
+}
+
+.bar .button {
+    white-space: normal
+}
+
+.bar .bar-item {
+    padding: 8px 16px;
+    float: left;
+    width: auto;
+    border: none;
+    display: block;
+    outline: 0
+}
+
+
+/* ----- HOME SECTION SETTINGS -------------- */
+#home {
+    color: #E5E3D5;
+}
+
+#name {
+    font-family: wayfinderLight, serif;
+    font-weight: 900;
+}
+
+.random-font {
+    font-size: 100px;
+    font-family: Helvetica, sans-serif;
+}
+
+/* ------ BOUCY BOUNCY ARROW ------ */
+.pointyarrow {
+    padding-top: 30px;
+    padding-bottom: 20px;
+    animation: bounce 2s ease infinite;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(20px);
+    }
+}
+
+.pointyarrow img {
+    filter: invert(1); 
+}
+
+/* ----- ABOUT SECTION SETTINGS ------------- */
+#aboutme {
+    background-color: #E5E3D5;
+}
+
+#about {
+    color: #B20000; 
+}
+
+.button {
+    position: relative;
+    display: block;
+    cursor: pointer;
+  }
+
+.button:before, .button:after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 3px;
+    top: 50%;
+    margin-top: -0.5px;
+    background: #E5E3D5;
+  }
+
+.button:hover {
+    color: #E5E3D5!important;
+}
+.button:before {
+    left: -1px;
+    color: #E5E3D5; 
+  }
+.button:after {
+    right: 1px;
+    background: #29282D;
+    transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
+  }
+  
+.button:hover:before {
+    background: #29282D;
+    width: 100%;
+    transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+  }
+  
+.button:hover:after {
+    background: transparent;
+    width: 100%;
+    transition: 0s;
+    color: #E5E3D5!important;
+  }
+  
+/* ----- PORTFOLIO SECTION SETTINGS ---------------------------- */
+#work {
+    color: #B20000; 
+padding-bottom: 5px;
+}
+
+#artwork {
+    background-color: #29282D; 
+}
+
+/*  ------ THE ART CURTAIN!! (a.ka. ARTWORK IMAGE OVERLAY) ------ */
+.row-padding img {padding-bottom: 12px} 
+
+.artbox {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.art-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s, transform 0.3s;
+    transform: translateY(20px);
+    box-sizing: content-box;
+}
+
+.artbox:hover .art-overlay{
+    opacity: 2;
+    transform: translateY(0);
+}
+
+.art-text {
+    color: white;
+    text-align: center;
+    padding: 15px;
+    transform: translateY(-10px); 
+    transition: transform 0.3s;
+}
+
+.art-container:hover .art-text {
+    transform: translateY(0);
+}
+
+/* ----- FOOTER SECTION SETTINGS ------------- */
+#footy {
+    background-color: #B20000;
+}
+
+#location{
+    font-size: 22px;
+}
+
+#contactstuff {
+    font-family: newsReader;
+}
+
+#socials{
+    padding-left: 10px;
+}
+
+/* ----- UNIVERSAL COLOR PALETTE  --------------  */
+.wallofBlood,.hover-wallofBlood:hover {
+    color: #000!important;
+    background-color: #B20000!important
+}
+
+.blood {
+    color: #B20000;
+}
+
+.flesh {
+    color: #E5E3D5;
+}
+
+.ashes {
+    color: #29282D;
+}
+
+
+/* ----- MAIN TEXT FORMAT  --------------  */
+h1,h2,h3,h4,h5,h6 {
+    font-family: wayfinderLight, serif;
+    font-weight: 400;
+    margin: 10px 0
+}
+
+h1 { font-size: 100px }
+
+h2 { font-size: 30px }
+
+h3 { font-size: 24px }
+
+h4 {font-size: 20px }
+
+h5 { font-size: 18px }
+
+h6 { font-size: 16px }
+
+#description{
+font-family: newsReader;
+}
+
+/* ----- LINE FORMAT  --------------  */
+hr {
+    border: 0;
+    border-top: 2px solid #eee;
+    margin: 20px 0;
+    box-sizing: content-box;
+    height: 0;
+    overflow: visible
+}
+.border-grey,.hover-border-grey:hover,.border-gray,.hover-border-gray:hover {
+    border-color: #29282D!important
+}
+
+/* ----- IMAGE FORMAT  --------------  */
+.the-image {
+    max-width: 100%;
+    height: auto
+}
+
+img {
+    vertical-align: middle;
+    border-style: none;
+}
+
+/* ----- SMALL SCREEN SETTINGS  --------------  */
+
+
+
+@media (max-width: 600px) {
+    .hide-small {
+        display: none!important
+    }
+
+}
+
+@media (min-width: 993px) {
+    .hide-large {
+        display: none!important
+    }
+}
+
+@media (max-width: 992px) and (min-width:601px) {
+    .hide-medium {
+        display:none!important
+    }
+}
+
+@media (max-width: 992px) {
+    .main {
+        margin-left: 1px!important;
+        margin-right: 1px!important
+    }
+}
+
+.row-padding,.row-padding>.half,.row-padding>.third,.row-padding>.twothird,.row-padding>.threequarter,.row-padding>.quarter,.row-padding>.col {
+    padding: 0 8px
+}
+
+.the-container,.panel {
+    padding: 0.01em 16px
+}
+
+.panel {
+    margin-top: 16px;
+    margin-bottom: 20px
+}
+
+
+/* ----- UNIVERSAL SIZE SETTINGS  -------------- */
+.medium {
+    font-size: 15px!important
+}
+
+.xlarge {
+    font-size: 22px!important
+}
+
+.jumbo {
+    font-size: 64px!important
+}
+
+
+.text-justify {
+    text-align: justify!important
+}
+
+.center{
+    text-align: center!important
+}
+
+/* ----- UNIVERSAL MARGIN SETTINGS  --------------  */
+.margin-top {
+    margin-top: 16px!important
+}
+
+.margin-bottom {
+    margin-bottom: 16px!important
+}
+
+.margin-left {
+    margin-left: 16px!important
+}
+
+.margin-right {
+    margin-right: 16px!important
+}
+
+.right {
+    float: right!important
+}
+
+.text-justify {
+    text-align: justify!important
+}
+
+.center{
+    text-align: center!important
+}
+
+/* ----- UNIVERSAL PADDING SETTINGS  --------------  */
+.padding-16 {
+    padding-top: 16px!important;
+    padding-bottom: 16px!important
+}
+
+.padding-24 {
+    padding-top: 24px!important;
+    padding-bottom: 24px!important
+}
+
+.padding-32 {
+    padding-top: 32px!important;
+    padding-bottom: 32px!important
+}
+
+.padding-64 {
+    padding-top: 64px!important;
+    padding-bottom: 64px!important
+}
+
+/*  ------ UNIVERSAL BUTTON & INPUT SETTINGS ------ */
+
+button,input,select,textarea,optgroup {
+    font: inherit;
+    margin: 0
+}
+
+button,input {
+    overflow: visible
+}
+
+button,select {
+    text-transform: none
+}
+
+button,[type=button],[type=reset],[type=submit] {
+    -webkit-appearance: button
+}
+
+[type=checkbox],[type=radio] {
+    padding: 0
+}
+
+.btn,.button {
+    border: none;
+    display: inline-block;
+    padding: 8px 16px;
+    vertical-align: middle;
+    overflow: hidden;
+    text-decoration: none;
+    color: inherit;
+    background-color: inherit;
+    text-align: center;
+    cursor: pointer;
+    white-space: nowrap
+}
+
+.input {
+    padding: 8px;
+    display: block;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    width: 100%
+}
+
+.main,#main {
+    transition: margin-left .4s
+}
+
+.the-container:after,.the-container:before,.panel:after,.panel:before,.row:after,.row:before,.row-padding:after,.row-padding:before, .cell-row:before,.cell-row:after,.clear:after,.clear:before,.bar:before,.bar:after {
+    content: "";
+    display: table;
+    clear: both
+}
+
+.col,.half,.third,.twothird,.threequarter,.quarter {
+    float: left;
+    width: 100%
+}
+
+
+@media (min-width: 601px) {
+    .col.m1 {
+        width:8.33333%
+    }
+
+    .col.m2 {
+        width: 16.66666%
+    }
+
+    .col.m3,.quarter {
+        width: 24.99999%
+    }
+
+    .col.m4,.third {
+        width: 33.33333%
+    }
+
+    .col.m5 {
+        width: 41.66666%
+    }
+
+    .col.m6,.half {
+        width: 49.99999%
+    }
+
+    .col.m7 {
+        width: 58.33333%
+    }
+
+    .col.m8,.twothird {
+        width: 66.66666%
+    }
+
+    .col.m9,.threequarter {
+        width: 74.99999%
+    }
+
+    .col.m10 {
+        width: 83.33333%
+    }
+
+    .col.m11 {
+        width: 91.66666%
+    }
+
+    .col.m12 {
+        width: 99.99999%
+    }
+}
+
+.the-content,.auto {
+    margin-left: auto;
+    margin-right: auto
+}
+
+.the-content {
+    max-width: 980px
+}
+
+
+
+
+
+
+
+
